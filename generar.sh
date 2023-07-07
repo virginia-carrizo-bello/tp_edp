@@ -3,7 +3,6 @@
 echo "BIENVENIDO AL GENERADOR DE IMAGENES"
 
 CANT_IMG=$1
-mkdir mis_img
 
 curl https://raw.githubusercontent.com/adalessandro/EdP-2023-TP-Final/main/dict.csv > nombres.txt
 #CANT_LINEAS=$(wc -l nombres.txt | cut -d ' ' -f1)
@@ -19,11 +18,11 @@ do
 	NOMBRE=$(awk -v "variable=$NUM_LINEA" 'NR==variable' nombres.txt | cut -d "," -f 1 | tr " " "_")
 	curl -L https://thispersondoesnotexist.com/ --output img.tmp
 	cp img.tmp $NOMBRE.jpg
-	mv $NOMBRE.jpg mis_img
+	
 	sleep 1
 	
 done
 
-tar jcvf imagenes.tar.gz mis_img
+tar jcvf imagenes.tar.gz *.jpg
 
 md5sum imagenes.tar.gz > checksum.txt
