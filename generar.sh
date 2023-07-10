@@ -1,11 +1,11 @@
 #!/bin/bash
 
-echo "BIENVENIDO AL GENERADOR DE IMAGENES"
+echo "GENERANDO IMAGENES..."
 
 CANT_IMG=$1
 
 curl https://raw.githubusercontent.com/adalessandro/EdP-2023-TP-Final/main/dict.csv > nombres.txt
-#CANT_LINEAS=$(wc -l nombres.txt | cut -d ' ' -f1)
+
 
 for (( i=0; i<$CANT_IMG; i++ ))
 do
@@ -22,6 +22,8 @@ do
 	sleep 1
 	
 done
+
+echo "Estas son las imagenes generadas y comprimidas en imagenes.tar.gz:"
 
 tar jcvf imagenes.tar.gz *.jpg
 
