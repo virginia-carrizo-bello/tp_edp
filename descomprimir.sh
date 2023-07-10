@@ -15,3 +15,4 @@ then
 else
 	echo "Se debe ingresar un archivo que esté comprimido"
 fi
+echo "¡Descompresion exitosa!"
