@@ -25,7 +25,7 @@ echo "
 echo "PORFAVOR INGRESE UNA OPCION" 
 read OPCION
 
-while [[ $OPCION != "*" ]]
+while [ $OPCION != "*" ]
 do
 
 case $OPCION in
