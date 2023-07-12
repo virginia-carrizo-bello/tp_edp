@@ -1,4 +1,4 @@
-## Trabajo Práctico Entorno de la Programación
+##            Trabajo Práctico Entorno de la Programación
 
 <div align="center">
 <img alt="Static Badge" src="https://img.shields.io/badge/Docker-gray?logo=docker">
@@ -55,8 +55,8 @@ docker cp 727ea5f66d2c:/arch_comp.tar.gz {/ruta_local}
 
 Por cualquier consulta/mejora dejamos nuestros correos electrónicos:
 
--virginia.carrizo.bello@gmail.com
--fernandez.octavio.ismael@gmail.com
+<div>virginia.carrizo.bello@gmail.com</div>
+<div>fernandez.octavio.ismael@gmail.com</div>
 
 Gracias por leer! 
 Saludos.
