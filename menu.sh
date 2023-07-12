@@ -25,7 +25,7 @@ echo "
 echo "PORFAVOR INGRESE UNA OPCION" 
 read OPCION
 
-while [ $OPCION != "*" ]
+while [ "$OPCION" != "*" ]
 do
 
 case $OPCION in
@@ -42,7 +42,8 @@ case $OPCION in
 		;;
 	4)	bash comprimir.sh
 		;;
-	*)	echo "Ingrese una opcion valida"	
+	*)	echo "Ingrese una opcion valida"
+	
 esac
 
 echo "
