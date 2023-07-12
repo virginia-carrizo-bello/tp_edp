@@ -52,6 +52,7 @@ Ejecuta el script "procesar.sh" el cual recibe como argumento el nombre de la im
 Ejecuta el script "comprimir.sh" el cual genera un archivo con la lista de nombres de todas las imágenes generadas, un archivo con la lista de nombre válidos y un archivo con el total de personas cuyo nombre termine con la letra "a". Por último, comprime los 3 archivos anteriores y todas las imágenes generadas.
 
 Fuera del contenedor, utilice el siguente comando para guardar éste archivo comprimido en su local:
+<br>
 docker cp 727ea5f66d2c:/arch_comp.tar.gz {/ruta_local}
 
 
