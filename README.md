@@ -1,4 +1,4 @@
-##            Trabajo Práctico Entorno de la Programación
+##Trabajo Práctico Entorno de la Programación
 
 <div align="center">
 <img alt="Static Badge" src="https://img.shields.io/badge/Docker-gray?logo=docker">
@@ -18,9 +18,12 @@ Los usuarios de este programa podrán generar, comprimir y editar imágenes, eje
 
 -Construcción y ejecución.
 
-El primer paso a realizar es construtir la imagen de Docker:docker build -t dockerfile {/ruta donde se almacenará la imagen} 
+El primer paso a realizar es construtir la imagen de Docker:
+<br>
+docker build -t dockerfile {/ruta donde se almacenará la imagen} 
 
 El segundo paso es ejecutar el contenedor:
+<br>
 docker run -it dockerfile
 
 Una vez que  el contenedor este corriendo se podrá ver el siguente menú:
@@ -57,6 +60,7 @@ Por cualquier consulta/mejora dejamos nuestros correos electrónicos:
 
 <div>virginia.carrizo.bello@gmail.com</div>
 <div>fernandez.octavio.ismael@gmail.com</div>
+
 
 Gracias por leer! 
 Saludos.
