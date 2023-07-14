@@ -8,11 +8,11 @@ then
 	if [[ -e $IMG_COMP && -f $CHECKSUM ]]
 	then
 		echo "Descomprimiendo..."
-		tar xvf $IMG_COMP 
+		tar xvf $IMG_COMP
+	       	echo "¡Descompresion exitosa!"	
 	else
 		echo "Se debe especificar los archivos a descomprimir y el checksum"
 	fi
 else
 	echo "Se debe ingresar un archivo que esté comprimido"
 fi
-echo "¡Descompresion exitosa!"
