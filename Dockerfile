@@ -4,7 +4,7 @@ MAINTAINER Fernandez Octavio - Carrizo Bello Virginia
 RUN apt-get update && apt-get install -y imagemagick-6.q16
 RUN apt-get update && apt-get install -y tar
 RUN apt-get update && apt-get install -y curl
-RUN apt-get update && apt-get install -y bzip2
+RUN apt-get update && apt-get install -y gzip
 
 COPY menu.sh /menu.sh
 COPY generar.sh /generar.sh
