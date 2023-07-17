@@ -51,10 +51,18 @@ Ejecuta el script "procesar.sh" el cual recibe como argumento el nombre de la im
 
 Ejecuta el script "comprimir.sh" el cual genera un archivo con la lista de nombres de todas las imágenes generadas, un archivo con la lista de nombre válidos y un archivo con el total de personas cuyo nombre termine con la letra "a". Por último, comprime los 3 archivos anteriores y todas las imágenes generadas.
 
-Fuera del contenedor, utilice el siguente comando para guardar éste archivo comprimido en su local:
+Para poder acceder al archivo comprimido desde fuera del contenedor, primero se debe verificar el ID del contenedor, mientras esté en 
+ejecución mediante el comando "ps":
 <br>
-docker cp 727ea5f66d2c:/arch_comp.tar.gz {/ruta_local}
-
+docker ps
+<div>
+<img alt="captura ps" src="./docs/docker_ps.png">
+</div>
+<br>
+Utilice el siguente comando para guardar éste archivo comprimido en su local, siendo "NAMES" el nombre que figura al correr el comando ps (gracious_rhodes):
+<br>
+docker cp {NAMES}:/arch_comp.tar.gz {/ruta_local}
+<br>
 
 
 Por cualquier consulta/mejora dejamos nuestros correos electrónicos:
